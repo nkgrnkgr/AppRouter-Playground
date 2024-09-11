@@ -2,10 +2,13 @@
 
 import { Button } from "./Button";
 import { ServerSideComponentInClient2 } from "./ServerSideComponentInClient";
+import { fetchWhether } from "./fetchWeather";
 
 export function ClientComponent() {
   const handleClick = () => {
-    alert("button clicked");
+    fetchWhether().then((data) => {
+      alert(JSON.stringify(data, null, 2));
+    });
   };
   return (
     <div className="m-4 bg-slate-100">
