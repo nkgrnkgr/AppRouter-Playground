@@ -1,12 +1,13 @@
 import { ClientComponent } from "./ClientComponent";
-import { fetchPost } from "./api/fetchPost";
+import { fetchData } from "./api/fetchLocalServer";
 
 export async function ServerComponent() {
-  const data = await fetchPost("1");
+  const data = await fetchData();
   return (
     <div className="m-4 bg-slate-200">
       <h1>Server Component</h1>
-      <div className="m-2">{data.userId}</div>
+      <div className="m-2">{data.message}</div>
+      <div className="m-2">{data.timestamp}</div>
       <ClientComponent />
     </div>
   );
