@@ -2,7 +2,7 @@
 
 import { Button } from "./Button";
 import { ServerSideComponentInClient2 } from "./ServerSideComponentInClient";
-import { fetchWhether } from "./fetchWeather";
+import { fetchWhether } from "./api/fetchWeather";
 
 export function ClientComponent() {
   const handleClick = () => {

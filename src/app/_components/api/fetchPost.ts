@@ -1,4 +1,4 @@
-import type { Post } from "./types";
+import type { Post } from "../types";
 
 function wait(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));

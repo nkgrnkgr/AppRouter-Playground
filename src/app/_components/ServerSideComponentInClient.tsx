@@ -1,4 +1,4 @@
-import { fetchPost } from "./fetchPost";
+import { fetchPost } from "./api/fetchPost";
 
 export async function ServerSideComponentInClient1() {
   const data = await fetchPost("2");
