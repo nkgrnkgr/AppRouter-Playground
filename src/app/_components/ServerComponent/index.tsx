@@ -1,5 +1,5 @@
-import { ClientComponent } from "./ClientComponent";
-import { fetchData } from "./api/fetchLocalServer";
+import { fetchData } from "../api/fetchLocalServer";
+import { ClientComponent } from "./ClinetComponent";
 
 export async function ServerComponent() {
   const data = await fetchData();

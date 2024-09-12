@@ -1,8 +1,7 @@
 "use client";
 
-import { Button } from "./Button";
-import { ServerSideComponentInClient2 } from "./ServerSideComponentInClient";
-import { fetchData } from "./api/fetchLocalServer";
+import { Button } from "../../Button";
+import { fetchData } from "../../api/fetchLocalServer";
 
 export function ClientComponent() {
   const handleClick = () => {
@@ -16,7 +15,6 @@ export function ClientComponent() {
       <div className="p-4">
         <Button onClick={handleClick}>Click</Button>
       </div>
-      <ServerSideComponentInClient2 />
     </div>
   );
 }

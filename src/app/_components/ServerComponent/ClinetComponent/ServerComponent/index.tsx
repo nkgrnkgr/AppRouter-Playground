@@ -1,4 +1,4 @@
-import { fetchData } from "./api/fetchLocalServer";
+import { fetchData } from "@/app/_components/api/fetchLocalServer";
 
 export async function ServerSideComponentInClient1() {
   const data = await fetchData();
